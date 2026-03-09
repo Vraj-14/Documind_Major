@@ -1,0 +1,2252 @@
+[
+  {
+    "text": "How would you describe the business performance of Coal India Limited?",
+    "entities": [
+      [
+        "Coal India Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Could you assess the performance summary of Bharat Petroleum Corporation Limited?",
+    "entities": [
+      [
+        "Bharat Petroleum Corporation Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Could you summarize the financial health of Apollo Hospitals Enterprise Limited?",
+    "entities": [
+      [
+        "Apollo Hospitals Enterprise Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "How is the financial condition of Kotak Mahindra Bank Limited?",
+    "entities": [
+      [
+        "Kotak Mahindra Bank Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "I'm looking for the company performance of Asian Paints Limited.",
+    "entities": [
+      [
+        "Asian Paints Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Could you summarize the financial condition of Axis Bank Limited?",
+    "entities": [
+      [
+        "Axis Bank Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Could you summarize the business performance of Bajaj Finance Limited?",
+    "entities": [
+      [
+        "Bajaj Finance Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "How would you describe the financial condition of Axis Bank Limited?",
+    "entities": [
+      [
+        "Axis Bank Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Tell me about the company performance of Tata Steel Limited.",
+    "entities": [
+      [
+        "Tata Steel Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "I'm looking for the performance summary of Bajaj Finserv Ltd..",
+    "entities": [
+      [
+        "Bajaj Finserv Ltd.",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Can you provide a financial condition for Tech Mahindra Limited?",
+    "entities": [
+      [
+        "Tech Mahindra Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "I'm looking for the company performance of Bajaj Auto Limited.",
+    "entities": [
+      [
+        "Bajaj Auto Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Could you assess the company performance of Nestl\u00e9 India Limited?",
+    "entities": [
+      [
+        "Nestl\u00e9 India Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "I need a financial health of SBI Life Insurance Company Limited.",
+    "entities": [
+      [
+        "SBI Life Insurance Company Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "How would you describe the company performance of UltraTech Cement Limited?",
+    "entities": [
+      [
+        "UltraTech Cement Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What is the performance summary of Mahindra & Mahindra Limited?",
+    "entities": [
+      [
+        "Mahindra & Mahindra Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Show me the performance summary for IndusInd Bank Limited.",
+    "entities": [
+      [
+        "IndusInd Bank Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "How is the financial condition of HDFC Bank Limited?",
+    "entities": [
+      [
+        "HDFC Bank Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Show me the company performance for Dr. Reddy's Laboratories Limited.",
+    "entities": [
+      [
+        "Dr. Reddy's Laboratories Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Could you assess the overall performance of HCL Technologies Limited?",
+    "entities": [
+      [
+        "HCL Technologies Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What is the financial condition of Adani Ports and Special Economic Zone Limited?",
+    "entities": [
+      [
+        "Adani Ports and Special Economic Zone Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What is the financial condition of Asian Paints Limited?",
+    "entities": [
+      [
+        "Asian Paints Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "I'm looking for the company performance of Oil and Natural Gas Corporation Limited.",
+    "entities": [
+      [
+        "Oil and Natural Gas Corporation Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Show me the overall performance for Bajaj Finance Limited.",
+    "entities": [
+      [
+        "Bajaj Finance Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "How is the company performance of Axis Bank Limited?",
+    "entities": [
+      [
+        "Axis Bank Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What can you tell me about the performance summary of Reliance Industries Limited?",
+    "entities": [
+      [
+        "Reliance Industries Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "I'm looking for the performance summary of HDFC Bank Limited.",
+    "entities": [
+      [
+        "HDFC Bank Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "I'm looking for the financial health of Tata Steel Limited.",
+    "entities": [
+      [
+        "Tata Steel Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What does the performance summary of Maruti Suzuki India Limited look like?",
+    "entities": [
+      [
+        "Maruti Suzuki India Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What does the financial condition of Maruti Suzuki India Limited look like?",
+    "entities": [
+      [
+        "Maruti Suzuki India Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "I'm looking for the financial condition of Tata Consultancy Services Limited.",
+    "entities": [
+      [
+        "Tata Consultancy Services Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Tell me about the performance summary of Bharat Petroleum Corporation Limited.",
+    "entities": [
+      [
+        "Bharat Petroleum Corporation Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Could you assess the financial condition of Mahindra & Mahindra Limited?",
+    "entities": [
+      [
+        "Mahindra & Mahindra Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Could you summarize the overall performance of Divi's Laboratories Limited?",
+    "entities": [
+      [
+        "Divi's Laboratories Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What does the business performance of HCL Technologies Limited look like?",
+    "entities": [
+      [
+        "HCL Technologies Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "How is the financial health of Axis Bank Limited?",
+    "entities": [
+      [
+        "Axis Bank Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "I'm looking for the business performance of Grasim Industries Limited?",
+    "entities": [
+      [
+        "Grasim Industries Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "I'm looking for the financial condition of Tech Mahindra Limited.",
+    "entities": [
+      [
+        "Tech Mahindra Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What can you tell me about the financial condition of Tech Mahindra Limited?",
+    "entities": [
+      [
+        "Tech Mahindra Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What can you tell me about the financial health of Bharat Petroleum Corporation Limited?",
+    "entities": [
+      [
+        "Bharat Petroleum Corporation Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Give me an update on the company performance of Cipla Limited.",
+    "entities": [
+      [
+        "Cipla Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Could you assess the company performance of Mahindra & Mahindra Limited?",
+    "entities": [
+      [
+        "Mahindra & Mahindra Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Show me the company performance for HCL Technologies Limited.",
+    "entities": [
+      [
+        "HCL Technologies Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What is the overall performance of Nestl\u00e9 India Limited?",
+    "entities": [
+      [
+        "Nestl\u00e9 India Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Give me an update on the company performance of Wipro Limited.",
+    "entities": [
+      [
+        "Wipro Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Could you assess the overall performance of Bajaj Auto Limited?",
+    "entities": [
+      [
+        "Bajaj Auto Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What does the overall performance of Infosys Limited look like?",
+    "entities": [
+      [
+        "Infosys Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What can you tell me about the financial health of Mahindra & Mahindra Limited?",
+    "entities": [
+      [
+        "Mahindra & Mahindra Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "How would you describe the performance summary of Tata Consultancy Services Limited?",
+    "entities": [
+      [
+        "Tata Consultancy Services Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Give me an update on the financial condition of JSW Steel Limited.",
+    "entities": [
+      [
+        "JSW Steel Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Can you provide a financial health for Wipro Limited?",
+    "entities": [
+      [
+        "Wipro Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Show me the company performance for Tata Steel Limited.",
+    "entities": [
+      [
+        "Tata Steel Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What does the performance summary of Tata Steel Limited look like?",
+    "entities": [
+      [
+        "Tata Steel Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What is the business performance of Dr. Reddy's Laboratories Limited?",
+    "entities": [
+      [
+        "Dr. Reddy's Laboratories Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What is the financial condition of Mahindra & Mahindra Limited?",
+    "entities": [
+      [
+        "Mahindra & Mahindra Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Could you summarize the overall performance of HDFC Life Insurance Company Limited?",
+    "entities": [
+      [
+        "HDFC Life Insurance Company Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "How would you describe the company performance of ICICI Bank Limited?",
+    "entities": [
+      [
+        "ICICI Bank Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Show me the company performance for Bharti Airtel Limited.",
+    "entities": [
+      [
+        "Bharti Airtel Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "How is the financial health of UltraTech Cement Limited?",
+    "entities": [
+      [
+        "UltraTech Cement Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "How would you describe the business performance of Bharat Electronics Limited?",
+    "entities": [
+      [
+        "Bharat Electronics Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Give me an update on the performance summary of Bharat Petroleum Corporation Limited.",
+    "entities": [
+      [
+        "Bharat Petroleum Corporation Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Give me an update on the performance summary of Tata Motors Passenger Vehicles Limited.",
+    "entities": [
+      [
+        "Tata Motors Passenger Vehicles Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "How is the overall performance of Hero MotoCorp Limited?",
+    "entities": [
+      [
+        "Hero MotoCorp Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "How is the financial condition of Bajaj Auto Limited?",
+    "entities": [
+      [
+        "Bajaj Auto Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What can you tell me about the business performance of Kotak Mahindra Bank Limited?",
+    "entities": [
+      [
+        "Kotak Mahindra Bank Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "I need a business performance of Grasim Industries Limited.",
+    "entities": [
+      [
+        "Grasim Industries Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What does the business performance of Wipro Limited look like?",
+    "entities": [
+      [
+        "Wipro Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Tell me about the financial condition of Adani Ports and Special Economic Zone Limited.",
+    "entities": [
+      [
+        "Adani Ports and Special Economic Zone Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Can you provide a financial condition for Coal India Limited?",
+    "entities": [
+      [
+        "Coal India Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Could you summarize the business performance of UltraTech Cement Limited?",
+    "entities": [
+      [
+        "UltraTech Cement Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Please explain the overall performance of Tech Mahindra Limited.",
+    "entities": [
+      [
+        "Tech Mahindra Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "How would you describe the performance summary of Maruti Suzuki India Limited?",
+    "entities": [
+      [
+        "Maruti Suzuki India Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "How would you describe the financial health of Bajaj Auto Limited?",
+    "entities": [
+      [
+        "Bajaj Auto Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What can you tell me about the performance summary of Mahindra & Mahindra Limited?",
+    "entities": [
+      [
+        "Mahindra & Mahindra Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "I need a performance summary of State Bank of India.",
+    "entities": [
+      [
+        "State Bank of India",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "I'm looking for the company performance of Bharat Petroleum Corporation Limited.",
+    "entities": [
+      [
+        "Bharat Petroleum Corporation Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "How is the performance summary of Wipro Limited?",
+    "entities": [
+      [
+        "Wipro Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What is the company performance of Adani Ports and Special Economic Zone Limited?",
+    "entities": [
+      [
+        "Adani Ports and Special Economic Zone Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Could you assess the financial condition of Sun Pharmaceutical Industries Limited?",
+    "entities": [
+      [
+        "Sun Pharmaceutical Industries Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Please explain the company performance of Tata Steel Limited.",
+    "entities": [
+      [
+        "Tata Steel Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Tell me about the overall performance of Hindalco Industries Limited.",
+    "entities": [
+      [
+        "Hindalco Industries Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What can you tell me about the financial condition of Bajaj Finance Limited?",
+    "entities": [
+      [
+        "Bajaj Finance Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What does the overall performance of Power Grid Corporation of India Limited look like?",
+    "entities": [
+      [
+        "Power Grid Corporation of India Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What does the overall performance of Britannia Industries Limited look like?",
+    "entities": [
+      [
+        "Britannia Industries Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Show me the financial health for Sun Pharmaceutical Industries Limited.",
+    "entities": [
+      [
+        "Sun Pharmaceutical Industries Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "How is the financial health of Hindustan Unilever Limited?",
+    "entities": [
+      [
+        "Hindustan Unilever Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Give me an update on the financial condition of Adani Enterprises Limited.",
+    "entities": [
+      [
+        "Adani Enterprises Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What is the overall performance of HDFC Life Insurance Company Limited?",
+    "entities": [
+      [
+        "HDFC Life Insurance Company Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Show me the overall performance for Britannia Industries Limited.",
+    "entities": [
+      [
+        "Britannia Industries Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "I need a financial health of Apollo Hospitals Enterprise Limited.",
+    "entities": [
+      [
+        "Apollo Hospitals Enterprise Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Could you summarize the performance summary of Kotak Mahindra Bank Limited?",
+    "entities": [
+      [
+        "Kotak Mahindra Bank Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Could you summarize the company performance of Tata Consultancy Services Limited?",
+    "entities": [
+      [
+        "Tata Consultancy Services Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Could you summarize the financial condition of HDFC Life Insurance Company Limited?",
+    "entities": [
+      [
+        "HDFC Life Insurance Company Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "I need a overall performance of Eicher Motors Limited.",
+    "entities": [
+      [
+        "Eicher Motors Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Can you provide a company performance for Larsen & Toubro Limited?",
+    "entities": [
+      [
+        "Larsen & Toubro Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What does the financial condition of HDFC Bank Limited look like?",
+    "entities": [
+      [
+        "HDFC Bank Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Please explain the financial health of Tech Mahindra Limited?",
+    "entities": [
+      [
+        "Tech Mahindra Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "I need a company performance of IndusInd Bank Limited.",
+    "entities": [
+      [
+        "IndusInd Bank Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Please explain the company performance of Power Grid Corporation of India Limited.",
+    "entities": [
+      [
+        "Power Grid Corporation of India Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "I'm looking for the financial condition of Divi's Laboratories Limited.",
+    "entities": [
+      [
+        "Divi's Laboratories Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Can you provide a performance summary for JSW Steel Limited?",
+    "entities": [
+      [
+        "JSW Steel Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Tell me about the business performance of Mahindra & Mahindra Limited.",
+    "entities": [
+      [
+        "Mahindra & Mahindra Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Could you summarize the company performance of Bharti Airtel Limited?",
+    "entities": [
+      [
+        "Bharti Airtel Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Give me an update on the business performance of Divi's Laboratories Limited.",
+    "entities": [
+      [
+        "Divi's Laboratories Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Can you provide a performance summary for Tech Mahindra Limited?",
+    "entities": [
+      [
+        "Tech Mahindra Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "I'm looking for the performance summary of Axis Bank Limited.",
+    "entities": [
+      [
+        "Axis Bank Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "How is the financial condition of Titan Company Limited?",
+    "entities": [
+      [
+        "Titan Company Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "How would you describe the company performance of SBI Life Insurance Company Limited?",
+    "entities": [
+      [
+        "SBI Life Insurance Company Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What does the company performance of Bharat Petroleum Corporation Limited look like?",
+    "entities": [
+      [
+        "Bharat Petroleum Corporation Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What is the company performance of Grasim Industries Limited?",
+    "entities": [
+      [
+        "Grasim Industries Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Give me an update on the company performance of HDFC Life Insurance Company Limited.",
+    "entities": [
+      [
+        "HDFC Life Insurance Company Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Tell me about the financial condition of Mahindra & Mahindra Limited.",
+    "entities": [
+      [
+        "Mahindra & Mahindra Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Could you assess the business performance of Adani Enterprises Limited?",
+    "entities": [
+      [
+        "Adani Enterprises Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "How is the company performance of State Bank of India?",
+    "entities": [
+      [
+        "State Bank of India",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Please explain the financial health of Grasim Industries Limited.",
+    "entities": [
+      [
+        "Grasim Industries Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What is the company performance of Bharat Electronics Limited?",
+    "entities": [
+      [
+        "Bharat Electronics Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Can you provide a business performance for Titan Company Limited?",
+    "entities": [
+      [
+        "Titan Company Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Could you assess the business performance of Larsen & Toubro Limited?",
+    "entities": [
+      [
+        "Larsen & Toubro Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Give me an update on the overall performance of JSW Steel Limited.",
+    "entities": [
+      [
+        "JSW Steel Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What is the financial condition of Tata Motors Passenger Vehicles Limited?",
+    "entities": [
+      [
+        "Tata Motors Passenger Vehicles Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "How is the financial health of Nestl\u00e9 India Limited?",
+    "entities": [
+      [
+        "Nestl\u00e9 India Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "How would you describe the business performance of Maruti Suzuki India Limited?",
+    "entities": [
+      [
+        "Maruti Suzuki India Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Could you summarize the company performance of HCL Technologies Limited?",
+    "entities": [
+      [
+        "HCL Technologies Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Could you summarize the financial condition of Apollo Hospitals Enterprise Limited?",
+    "entities": [
+      [
+        "Apollo Hospitals Enterprise Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Please explain the business performance of JSW Steel Limited.",
+    "entities": [
+      [
+        "JSW Steel Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "How is the financial health of Tata Consultancy Services Limited?",
+    "entities": [
+      [
+        "Tata Consultancy Services Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "I need a financial health of Bajaj Auto Limited.",
+    "entities": [
+      [
+        "Bajaj Auto Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What does the overall performance of Hindalco Industries Limited look like?",
+    "entities": [
+      [
+        "Hindalco Industries Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "I'm looking for the overall performance of Bajaj Auto Limited.",
+    "entities": [
+      [
+        "Bajaj Auto Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Please explain the business performance of SBI Life Insurance Company Limited.",
+    "entities": [
+      [
+        "SBI Life Insurance Company Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Could you assess the company performance of Eicher Motors Limited?",
+    "entities": [
+      [
+        "Eicher Motors Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What does the financial condition of Eicher Motors Limited look like?",
+    "entities": [
+      [
+        "Eicher Motors Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Tell me about the business performance of Bajaj Finance Limited.",
+    "entities": [
+      [
+        "Bajaj Finance Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What can you tell me about the financial health of Bharti Airtel Limited?",
+    "entities": [
+      [
+        "Bharti Airtel Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Show me the financial condition for Apollo Hospitals Enterprise Limited.",
+    "entities": [
+      [
+        "Apollo Hospitals Enterprise Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What is the overall performance of Infosys Limited?",
+    "entities": [
+      [
+        "Infosys Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "How would you describe the company performance of Bharat Electronics Limited?",
+    "entities": [
+      [
+        "Bharat Electronics Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Please explain the financial health of ITC Limited.",
+    "entities": [
+      [
+        "ITC Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Can you provide a performance summary for SBI Life Insurance Company Limited?",
+    "entities": [
+      [
+        "SBI Life Insurance Company Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "How is the financial condition of Reliance Industries Limited?",
+    "entities": [
+      [
+        "Reliance Industries Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What does the company performance of Infosys Limited look like?",
+    "entities": [
+      [
+        "Infosys Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Tell me about the performance summary of NTPC Limited.",
+    "entities": [
+      [
+        "NTPC Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Give me an update on the business performance of Tata Steel Limited.",
+    "entities": [
+      [
+        "Tata Steel Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "How is the performance summary of UltraTech Cement Limited?",
+    "entities": [
+      [
+        "UltraTech Cement Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What can you tell me about the business performance of Reliance Industries Limited?",
+    "entities": [
+      [
+        "Reliance Industries Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Give me an update on the financial health of Tata Consultancy Services Limited.",
+    "entities": [
+      [
+        "Tata Consultancy Services Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "I'm looking for the business performance of Britannia Industries Limited.",
+    "entities": [
+      [
+        "Britannia Industries Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Could you assess the overall performance of Apollo Hospitals Enterprise Limited?",
+    "entities": [
+      [
+        "Apollo Hospitals Enterprise Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "How would you describe the company performance of Divi's Laboratories Limited?",
+    "entities": [
+      [
+        "Divi's Laboratories Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Tell me about the company performance of IndusInd Bank Limited.",
+    "entities": [
+      [
+        "IndusInd Bank Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What is the financial health of Adani Ports and Special Economic Zone Limited?",
+    "entities": [
+      [
+        "Adani Ports and Special Economic Zone Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Could you summarize the overall performance of HDFC Bank Limited?",
+    "entities": [
+      [
+        "HDFC Bank Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "How is the overall performance of Tata Steel Limited?",
+    "entities": [
+      [
+        "Tata Steel Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Can you provide a business performance for HDFC Life Insurance Company Limited?",
+    "entities": [
+      [
+        "HDFC Life Insurance Company Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "I need a overall performance of Hindalco Industries Limited.",
+    "entities": [
+      [
+        "Hindalco Industries Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What is the overall performance of Bharat Petroleum Corporation Limited?",
+    "entities": [
+      [
+        "Bharat Petroleum Corporation Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What does the company performance of Power Grid Corporation of India Limited look like?",
+    "entities": [
+      [
+        "Power Grid Corporation of India Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What can you tell me about the performance summary of HCL Technologies Limited?",
+    "entities": [
+      [
+        "HCL Technologies Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Give me an update on the performance summary of HDFC Life Insurance Company Limited.",
+    "entities": [
+      [
+        "HDFC Life Insurance Company Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What does the business performance of Adani Ports and Special Economic Zone Limited look like?",
+    "entities": [
+      [
+        "Adani Ports and Special Economic Zone Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Can you provide a business performance for Wipro Limited?",
+    "entities": [
+      [
+        "Wipro Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What is the overall performance of Divi's Laboratories Limited?",
+    "entities": [
+      [
+        "Divi's Laboratories Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Can you provide a performance summary for Kotak Mahindra Bank Limited?",
+    "entities": [
+      [
+        "Kotak Mahindra Bank Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What does the company performance of Hindalco Industries Limited look like?",
+    "entities": [
+      [
+        "Hindalco Industries Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What is the overall performance of Tata Consultancy Services Limited?",
+    "entities": [
+      [
+        "Tata Consultancy Services Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Can you provide a business performance for Tata Consultancy Services Limited?",
+    "entities": [
+      [
+        "Tata Consultancy Services Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Please explain the business performance of Adani Enterprises Limited.",
+    "entities": [
+      [
+        "Adani Enterprises Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Please explain the company performance of Sun Pharmaceutical Industries Limited.",
+    "entities": [
+      [
+        "Sun Pharmaceutical Industries Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Can you provide a company performance for Nestl\u00e9 India Limited?",
+    "entities": [
+      [
+        "Nestl\u00e9 India Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Could you summarize the financial condition of Nestl\u00e9 India Limited?",
+    "entities": [
+      [
+        "Nestl\u00e9 India Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "How would you describe the company performance of Grasim Industries Limited?",
+    "entities": [
+      [
+        "Grasim Industries Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Could you assess the performance summary of SBI Life Insurance Company Limited?",
+    "entities": [
+      [
+        "SBI Life Insurance Company Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Could you summarize the company performance of Tata Steel Limited?",
+    "entities": [
+      [
+        "Tata Steel Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Tell me about the financial condition of Divi's Laboratories Limited.",
+    "entities": [
+      [
+        "Divi's Laboratories Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "How is the performance summary of State Bank of India?",
+    "entities": [
+      [
+        "State Bank of India",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What does the financial condition of Larsen & Toubro Limited look like?",
+    "entities": [
+      [
+        "Larsen & Toubro Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Could you assess the business performance of Infosys Limited?",
+    "entities": [
+      [
+        "Infosys Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What can you tell me about the performance summary of UltraTech Cement Limited?",
+    "entities": [
+      [
+        "UltraTech Cement Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Show me the overall performance for Tata Consultancy Services Limited.",
+    "entities": [
+      [
+        "Tata Consultancy Services Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Tell me about the financial health of Infosys Limited.",
+    "entities": [
+      [
+        "Infosys Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Could you assess the performance summary of Tata Steel Limited?",
+    "entities": [
+      [
+        "Tata Steel Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Give me an update on the company performance of Tata Steel Limited.",
+    "entities": [
+      [
+        "Tata Steel Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What is the financial health of Eicher Motors Limited?",
+    "entities": [
+      [
+        "Eicher Motors Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Tell me about the company performance of Tech Mahindra Limited.",
+    "entities": [
+      [
+        "Tech Mahindra Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "How would you describe the overall performance of State Bank of India?",
+    "entities": [
+      [
+        "State Bank of India",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Please explain the company performance of Maruti Suzuki India Limited.",
+    "entities": [
+      [
+        "Maruti Suzuki India Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Tell me about the company performance of Tata Consultancy Services Limited.",
+    "entities": [
+      [
+        "Tata Consultancy Services Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What is the company performance of Coal India Limited?",
+    "entities": [
+      [
+        "Coal India Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Show me the company performance for Divi's Laboratories Limited.",
+    "entities": [
+      [
+        "Divi's Laboratories Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "How would you describe the overall performance of Grasim Industries Limited?",
+    "entities": [
+      [
+        "Grasim Industries Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Tell me about the performance summary of State Bank of India.",
+    "entities": [
+      [
+        "State Bank of India",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Give me an update on the financial health of HDFC Life Insurance Company Limited.",
+    "entities": [
+      [
+        "HDFC Life Insurance Company Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Give me an update on the company performance of Bajaj Finserv Ltd..",
+    "entities": [
+      [
+        "Bajaj Finserv Ltd.",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Show me the financial health for Shriram Finance Limited.",
+    "entities": [
+      [
+        "Shriram Finance Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Tell me about the financial health of Coal India Limited.",
+    "entities": [
+      [
+        "Coal India Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What is the financial health of HDFC Bank Limited?",
+    "entities": [
+      [
+        "HDFC Bank Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Could you summarize the performance summary of Adani Enterprises Limited?",
+    "entities": [
+      [
+        "Adani Enterprises Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Could you summarize the financial condition of Kotak Mahindra Bank Limited?",
+    "entities": [
+      [
+        "Kotak Mahindra Bank Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "How would you describe the company performance of Eicher Motors Limited?",
+    "entities": [
+      [
+        "Eicher Motors Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What is the financial condition of NTPC Limited?",
+    "entities": [
+      [
+        "NTPC Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Please explain the business performance of Axis Bank Limited.",
+    "entities": [
+      [
+        "Axis Bank Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Could you assess the financial health of ITC Limited?",
+    "entities": [
+      [
+        "ITC Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Could you assess the company performance of IndusInd Bank Limited?",
+    "entities": [
+      [
+        "IndusInd Bank Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What does the company performance of HDFC Bank Limited look like?",
+    "entities": [
+      [
+        "HDFC Bank Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What can you tell me about the financial health of Apollo Hospitals Enterprise Limited?",
+    "entities": [
+      [
+        "Apollo Hospitals Enterprise Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "How is the company performance of Larsen & Toubro Limited?",
+    "entities": [
+      [
+        "Larsen & Toubro Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What does the company performance of Bajaj Finance Limited look like?",
+    "entities": [
+      [
+        "Bajaj Finance Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Please explain the overall performance of Shriram Finance Limited.",
+    "entities": [
+      [
+        "Shriram Finance Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Could you assess the company performance of ITC Limited?",
+    "entities": [
+      [
+        "ITC Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What can you tell me about the financial condition of Britannia Industries Limited?",
+    "entities": [
+      [
+        "Britannia Industries Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Tell me about the business performance of Bajaj Finserv Ltd..",
+    "entities": [
+      [
+        "Bajaj Finserv Ltd.",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Could you assess the overall performance of Coal India Limited?",
+    "entities": [
+      [
+        "Coal India Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What is the overall performance of Maruti Suzuki India Limited?",
+    "entities": [
+      [
+        "Maruti Suzuki India Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Give me an update on the business performance of Bharti Airtel Limited.",
+    "entities": [
+      [
+        "Bharti Airtel Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Could you summarize the business performance of ITC Limited?",
+    "entities": [
+      [
+        "ITC Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Show me the business performance for Titan Company Limited.",
+    "entities": [
+      [
+        "Titan Company Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Show me the overall performance for JSW Steel Limited.",
+    "entities": [
+      [
+        "JSW Steel Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Give me an update on the company performance of Hindustan Unilever Limited.",
+    "entities": [
+      [
+        "Hindustan Unilever Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Tell me about the financial health of Adani Ports and Special Economic Zone Limited.",
+    "entities": [
+      [
+        "Adani Ports and Special Economic Zone Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Tell me about the performance summary of IndusInd Bank Limited.",
+    "entities": [
+      [
+        "IndusInd Bank Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Show me the financial condition for Divi's Laboratories Limited.",
+    "entities": [
+      [
+        "Divi's Laboratories Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Can you provide a business performance for HDFC Bank Limited?",
+    "entities": [
+      [
+        "HDFC Bank Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "I need a financial health of Power Grid Corporation of India Limited.",
+    "entities": [
+      [
+        "Power Grid Corporation of India Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Could you assess the performance summary of Bajaj Finance Limited?",
+    "entities": [
+      [
+        "Bajaj Finance Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "How is the overall performance of Bharat Petroleum Corporation Limited?",
+    "entities": [
+      [
+        "Bharat Petroleum Corporation Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Can you provide a financial health for Bajaj Finance Limited?",
+    "entities": [
+      [
+        "Bajaj Finance Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What can you tell me about the overall performance of Divi's Laboratories Limited?",
+    "entities": [
+      [
+        "Divi's Laboratories Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Can you provide a company performance for HCL Technologies Limited?",
+    "entities": [
+      [
+        "HCL Technologies Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What does the financial condition of Nestl\u00e9 India Limited look like?",
+    "entities": [
+      [
+        "Nestl\u00e9 India Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "How would you describe the performance summary of HDFC Bank Limited?",
+    "entities": [
+      [
+        "HDFC Bank Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What can you tell me about the overall performance of Bharat Electronics Limited?",
+    "entities": [
+      [
+        "Bharat Electronics Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What is the financial condition of Apollo Hospitals Enterprise Limited?",
+    "entities": [
+      [
+        "Apollo Hospitals Enterprise Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What does the financial health of Wipro Limited look like?",
+    "entities": [
+      [
+        "Wipro Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Please explain the financial health of Bharat Electronics Limited.",
+    "entities": [
+      [
+        "Bharat Electronics Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Give me an update on the performance summary of Asian Paints Limited.",
+    "entities": [
+      [
+        "Asian Paints Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Tell me about the business performance of Wipro Limited.",
+    "entities": [
+      [
+        "Wipro Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "I'm looking for the overall performance of Wipro Limited.",
+    "entities": [
+      [
+        "Wipro Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Please explain the performance summary of Britannia Industries Limited.",
+    "entities": [
+      [
+        "Britannia Industries Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What can you tell me about the financial health of JSW Steel Limited?",
+    "entities": [
+      [
+        "JSW Steel Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What is the business performance of Maruti Suzuki India Limited?",
+    "entities": [
+      [
+        "Maruti Suzuki India Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Give me an update on the financial condition of Bajaj Auto Limited.",
+    "entities": [
+      [
+        "Bajaj Auto Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What does the financial health of Bharat Electronics Limited look like?",
+    "entities": [
+      [
+        "Bharat Electronics Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Can you provide a performance summary for Bajaj Finserv Ltd.?",
+    "entities": [
+      [
+        "Bajaj Finserv Ltd.",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Show me the financial health for Nestl\u00e9 India Limited.",
+    "entities": [
+      [
+        "Nestl\u00e9 India Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What is the business performance of Hindustan Unilever Limited?",
+    "entities": [
+      [
+        "Hindustan Unilever Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Could you summarize the financial condition of Bharat Petroleum Corporation Limited?",
+    "entities": [
+      [
+        "Bharat Petroleum Corporation Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "What can you tell me about the financial condition of Apollo Hospitals Enterprise Limited?",
+    "entities": [
+      [
+        "Apollo Hospitals Enterprise Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Tell me about the performance summary of Mahindra & Mahindra Limited.",
+    "entities": [
+      [
+        "Mahindra & Mahindra Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Can you provide a company performance for Tata Steel Limited?",
+    "entities": [
+      [
+        "Tata Steel Limited",
+        "COMPANY"
+      ]
+    ]
+  },
+  {
+    "text": "Tell me about the financial health of Sun Pharmaceutical Industries Limited.",
+    "entities": [
+      [
+        "Sun Pharmaceutical Industries Limited",
+        "COMPANY"
+      ]
+    ]
+  }
+]

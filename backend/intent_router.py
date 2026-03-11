@@ -41,9 +41,9 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from inference.intent_predictor import predict_intent
 from inference.ner_predictor import predict_entities
 
-from query_builder import build_query
-from database import execute_query
-from llm_generator import generate_answer
+from .query_builder import build_query
+from .database import execute_query
+from .llm_generator import generate_answer
 
 
 def process_question(question):

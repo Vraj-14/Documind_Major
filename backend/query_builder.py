@@ -1,4 +1,4 @@
-from metric_mapper import map_metric
+from .metric_mapper import map_metric
 
 def build_query(intent, entities):
     """

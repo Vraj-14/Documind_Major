@@ -85,7 +85,7 @@ companies.forEach(button => {
         const company = button.innerText;
 
         const question =
-        `Show revenue, net profit and eps of ${company} for 2025`;
+        `What is revenue, net profit and eps of ${company} in 2025`;
 
         console.log("Company question:", question);
 

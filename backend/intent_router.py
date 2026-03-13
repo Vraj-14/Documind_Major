@@ -58,6 +58,9 @@ def process_question(question):
 
     answer = generate_answer(question, columns, rows)
 
+    entities = predict_entities(question)
+    print("ENTITIES:", entities) 
+
     return {
         "intent": intent,
         "entities": entities,
@@ -65,3 +68,6 @@ def process_question(question):
         "data": rows,
         "answer": answer
     }
+
+
+    

@@ -1,112 +1,270 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
-     <meta charset="UTF-8">
-
-    <!-- viewport meta -->
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documind</title>
 
-<title>Documind</title>
+    
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"> -->
 
-<!-- favicon
-<link rel="icon" href="E:\8th Sem\MAJOR\Documind\frontend\favicon-32x32.png"> -->
-
-
-<link rel="stylesheet" href="css/styles.css">
-
+    <!-- <link rel="stylesheet" href="style_t1.css">
 </head>
 
-<body>
+<body> -->
 
-<header>
-
-<h1>Documind</h1>
-<p class="tagline">FINANCE INSIGHTS, POWERED BY AI</p>
-
+<!-- <header>
+    <h1>Documind</h1>
+    <p class="tagline">Ask. Analyze. Unlock Insights.</p>
+</header> -->
+<!-- <header> -->
+  <!-- <div class="header-center">
+    <h1>Documind</h1>
+    <div class="animated-tagline" id="animatedTagline">
+      <span class="word" id="w1">Ask.</span>
+      <span class="word" id="w2">Analyze.</span>
+      <span class="word" id="w3">Unlock Insights.</span>
+    </div>
+  </div>
+  <p class="tagline"></p>
 </header>
+
+<script>
+  const words = [
+    document.getElementById('w1'),
+    document.getElementById('w2'),
+    document.getElementById('w3'),
+  ];
+
+  function runAnimation() { -->
+    <!-- // Reset all
+    words.forEach(w => { w.className = 'word'; });
+
+    // Stagger reveal
+    words.forEach((w, i) => {
+      setTimeout(() => w.classList.add('visible'), 300 + i * 500);
+    });
+
+    // Fade out all together after they've all appeared
+    const fadeOutDelay = 300 + (words.length - 1) * 500 + 2000;
+    setTimeout(() => {
+      words.forEach(w => {
+        w.classList.remove('visible');
+        w.classList.add('fade-out');
+      });
+    }, fadeOutDelay);
+  }
+
+  runAnimation();
+  setInterval(runAnimation, 3000); -->
+<!-- </script>
+
 
 
 <div class="container">
 
-<aside class="sidebar">
+    <aside class="sidebar">
+        <h3>Previous Questions</h3>
+        <ul id="history"></ul>
+    </aside>
 
-<h3>Previous Questions</h3>
-<ul id="history"></ul>
+    <main>
 
-</aside>
+        <section class="companies">
+            <h3>Quick Company Insights</h3>
+            <div class="company-grid">
+                <button class="company-card">HDFC Bank Limited</button>
+                <button class="company-card">ICICI Bank Limited</button>
+                <button class="company-card">Infosys Limited</button>
+                <button class="company-card">Reliance Industries Limited</button>
+                <button class="company-card">Tata Consultancy Services Limited</button>
+            </div>
+        </section>
+
+        <section class="question-box">
+            <input
+                type="text"
+                id="questionInput"
+                placeholder="Ask a financial question..." -->
+            <!-- > --> 
+            <!-- <button id="sendBtn">
+                 <img src="icons/up-arrow.png" alt="Send"> -->
+            <!-- </button> --> 
+        <!-- </section>
+
+        <section class="answer">
+            <h3>Answer</h3>
+            <div id="answerWindow"></div>
+        </section>
+
+        <section class="entities">
+            <div class="entity">
+                <h4>Company</h4>
+                <p id="company"></p>
+            </div>
+            <div class="entity">
+                <h4>Metric</h4>
+                <p id="metric"></p>
+            </div>
+            <div class="entity">
+                <h4>Year</h4>
+                <p id="year"></p>
+            </div>
+        </section>
+
+    </main>
+
+</div> -->
+
+<!-- <script src="js/api.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/main.js"></script> -->
+
+<!-- </body>
+</html> -->
 
 
-<main>
-
-<section class="companies">
-
-<h3>Quick Company Insights</h3>
-
-<div class="company-grid">
-
-<button class="company-card">HDFC Bank Limited</button>
-<button class="company-card">ICICI Bank Limited</button>
-<button class="company-card">Infosys Limited</button>
-<button class="company-card">Reliance Industries Limited</button>
-<button class="company-card">Tata Consultancy Services Limited</button>
-
-</div>
-
-</section>
 
 
-<section class="question-box">
 
-<input
-type="text"
-id="questionInput"
-placeholder="Ask financial question..."
->
+<!DOCTYPE html>
+<html lang="en">
 
-<!-- <button id="sendBtn">⬆</button> -->
- <button id="sendBtn">
-    <img src="icons/up-arrow.png" alt="Send">
-</button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documind</title>
 
-</section>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-<section class="answer">
+<body>
+<header>
+    <div class="header-center">
+        <h1>Documind</h1>
+        <div class="animated-tagline" id="animatedTagline">
+            <span class="word" id="word0">Ask.</span>
+            <span class="word" id="word1">Analyse.</span>
+            <span class="word" id="word2">Unlock</span>
+            <span class="word" id="word3">Insights.</span>
+        </div>
+    </div>
+</header>
 
-<h3>AI Answer</h3>
+<div class="container">
 
-<div id="answerWindow"></div>
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h3>Previous Questions</h3>
+            <button class="sidebar-toggle" id="sidebarToggle" title="Hide sidebar">&#8249;</button>
+        </div>
+        <ul id="history"></ul>
+    </aside>
 
-</section>
+    <!-- Tab to reopen sidebar when collapsed -->
+    <button class="sidebar-open-tab" id="sidebarOpenTab" title="Show sidebar">&#8250;</button>
 
+    <main>
 
-<section class="entities">
+        <section class="companies">
+            <h3>Quick Company Insights</h3>
+            <div class="company-grid">
+                <button class="company-card">HDFC Bank Limited</button>
+                <button class="company-card">ICICI Bank Limited</button>
+                <button class="company-card">Infosys Limited</button>
+                <button class="company-card">Reliance Industries Limited</button>
+                <button class="company-card">Tata Consultancy Services Limited</button>
+            </div>
+        </section>
 
-<div class="entity">
-<h4>Company</h4>
-<p id="company"></p>
-</div>
+        <section class="question-box">
+            <input
+                type="text"
+                id="questionInput"
+                placeholder="Ask a financial question..."
+            >
+            <button id="sendBtn">
+                <img src="icons/up-arrow.png" alt="Send">
+            </button>
+        </section>
 
-<div class="entity">
-<h4>Metric</h4>
-<p id="metric"></p>
-</div>
+        <section class="answer">
+            <h3>Response</h3>
+            <div id="answerWindow"></div>
+        </section>
 
-<div class="entity">
-<h4>Year</h4>
-<p id="year"></p>
-</div>
+        <section class="entities">
+            <div class="entity">
+                <h4>Company</h4>
+                <p id="company"></p>
+            </div>
+            <div class="entity">
+                <h4>Metric</h4>
+                <p id="metric"></p>
+            </div>
+            <div class="entity">
+                <h4>Year</h4>
+                <p id="year"></p>
+            </div>
+        </section>
 
-</section>
-
-</main>
+    </main>
 
 </div>
 
 <script src="js/api.js"></script>
 <script src="js/ui.js"></script>
 <script src="js/main.js"></script>
+
+<script>
+    /* ── TAGLINE ANIMATION ── */
+    const words = document.querySelectorAll('.animated-tagline .word');
+    const wordDelay    = 800;
+    const holdDuration = 5000;
+    const fadeOutMs    = 900;
+    const pauseMs      = 2000;
+
+    function runAnimation() {
+        words.forEach(w => w.classList.remove('visible', 'fade-out'));
+        words.forEach((w, i) => {
+            setTimeout(() => w.classList.add('visible'), i * wordDelay);
+        });
+        const allInTime = (words.length - 1) * wordDelay + holdDuration;
+        setTimeout(() => {
+            words.forEach(w => {
+                w.classList.remove('visible');
+                w.classList.add('fade-out');
+            });
+            setTimeout(() => {
+                words.forEach(w => w.classList.remove('fade-out'));
+                setTimeout(runAnimation, pauseMs);
+            }, fadeOutMs);
+        }, allInTime);
+    }
+    runAnimation();
+
+    /* ── SIDEBAR TOGGLE ── */
+    const sidebar       = document.getElementById('sidebar');
+    const toggleBtn     = document.getElementById('sidebarToggle');
+    const openTab       = document.getElementById('sidebarOpenTab');
+
+    toggleBtn.addEventListener('click', () => {
+        sidebar.classList.add('collapsed');
+        openTab.classList.add('visible');
+    });
+
+    openTab.addEventListener('click', () => {
+        sidebar.classList.remove('collapsed');
+        openTab.classList.remove('visible');
+    });
+</script>
 
 </body>
 </html>

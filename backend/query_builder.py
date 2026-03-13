@@ -1,3 +1,325 @@
+# from .metric_mapper import map_metric
+
+# def build_query(intent, entities):
+#     """
+#     Main router for SQL query creation
+#     """
+
+#     if intent == "metric_lookup":
+#         return metric_lookup_query(entities)
+
+#     elif intent == "comparison":
+#         return comparison_query(entities)
+
+#     elif intent == "trend_analysis":
+#         return trend_analysis_query(entities)
+
+#     elif intent == "performance_analysis":
+#         return performance_query(entities)
+
+#     else:
+#         raise ValueError("Unsupported intent")
+
+
+# # --------------------------------
+# # Metric Lookup
+# # --------------------------------
+
+# # def metric_lookup_query(entities):
+
+# #     company = entities.get("COMPANY", [None])[0]
+# #     metric = entities.get("METRIC", [None])[0]
+# #     year = entities.get("YEAR", [None])[0]
+
+# #     query = f"""
+# #     SELECT {metric}
+# #     FROM financials_yearly
+# #     JOIN company_master USING(company_id)
+# #     WHERE company_name = '{company}'
+# #     AND fiscal_year = {year};
+# #     """
+
+# #     return query
+
+# def metric_lookup_query(entities):
+
+#     company = entities.get("COMPANY", [None])[0]
+#     metric = entities.get("METRIC", [None])[0]
+#     year = entities.get("YEAR", [None])[0]
+
+#     metric = map_metric(metric)
+
+#     query = f"""
+#     SELECT {metric}
+#     FROM financials_yearly
+#     JOIN company_master USING(company_id)
+#     WHERE company_name = '{company}'
+#     AND fiscal_year = {year};
+#     """
+
+#     return query
+
+
+# # --------------------------------
+# # Comparison
+# # --------------------------------
+
+# # def comparison_query(entities):
+
+# #     companies = entities.get("COMPANY", [])
+# #     metric = entities.get("METRIC", [None])[0]
+# #     year = entities.get("YEAR", [None])[0]
+
+# #     company_list = ",".join([f"'{c}'" for c in companies])
+
+# #     query = f"""
+# #     SELECT company_name, {metric}
+# #     FROM financials_yearly
+# #     JOIN company_master USING(company_id)
+# #     WHERE company_name IN ({company_list})
+# #     AND fiscal_year = {year};
+# #     """
+
+# #     return query
+
+# def comparison_query(entities):
+
+#     companies = entities.get("COMPANY", [])
+#     metric = entities.get("METRIC", [None])[0]
+#     year = entities.get("YEAR", [None])[0]
+
+#     metric = map_metric(metric)
+
+#     company_list = ",".join([f"'{c}'" for c in companies])
+
+#     query = f"""
+#     SELECT company_name, {metric}
+#     FROM financials_yearly
+#     JOIN company_master USING(company_id)
+#     WHERE company_name IN ({company_list})
+#     AND fiscal_year = {year};
+#     """
+
+#     return query
+
+
+# # --------------------------------
+# # Trend Analysis
+# # --------------------------------
+
+# # def trend_analysis_query(entities):
+
+# #     company = entities.get("COMPANY", [None])[0]
+# #     metric = entities.get("METRIC", [None])[0]
+
+# #     query = f"""
+# #     SELECT fiscal_year, {metric}
+# #     FROM financials_yearly
+# #     JOIN company_master USING(company_id)
+# #     WHERE company_name = '{company}'
+# #     ORDER BY fiscal_year;
+# #     """
+
+# #     return query
+
+# def trend_analysis_query(entities):
+
+#     company = entities.get("COMPANY", [None])[0]
+#     metric = entities.get("METRIC", [None])[0]
+
+#     metric = map_metric(metric)
+
+#     query = f"""
+#     SELECT fiscal_year, {metric}
+#     FROM financials_yearly
+#     JOIN company_master USING(company_id)
+#     WHERE company_name = '{company}'
+#     ORDER BY fiscal_year;
+#     """
+
+#     return query
+
+# # --------------------------------
+# # Performance Analysis
+# # --------------------------------
+
+# def performance_query(entities):
+
+#     company = entities.get("COMPANY", [None])[0]
+#     year = entities.get("YEAR", [None])[0]
+
+#     query = f"""
+#     SELECT revenue, net_profit, eps
+#     FROM financials_yearly
+#     JOIN company_master USING(company_id)
+#     WHERE company_name = '{company}'
+#     AND fiscal_year = {year};
+#     """
+
+#     return query
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# from .metric_mapper import map_metric
+
+# def build_query(intent, entities):
+#     """
+#     Main router for SQL query creation
+#     """
+
+#     if intent == "metric_lookup":
+#         return metric_lookup_query(entities)
+
+#     elif intent == "comparison":
+#         return comparison_query(entities)
+
+#     elif intent == "trend_analysis":
+#         return trend_analysis_query(entities)
+
+#     elif intent == "performance_analysis":
+#         return performance_query(entities)
+
+#     else:
+#         raise ValueError("Unsupported intent")
+
+
+# # --------------------------------
+# # Metric Lookup
+# # --------------------------------
+
+# def metric_lookup_query(entities):
+
+#     company = entities.get("COMPANY", [None])[0]
+#     year = entities.get("YEAR", [None])[0]
+
+#     # FIX: get ALL metrics, not just [0]
+#     raw_metrics = entities.get("METRIC", [])
+
+#     if not raw_metrics:
+#         raise ValueError("No metric found in question")
+
+#     # Map each metric name to its DB column name
+#     mapped_metrics = [map_metric(m) for m in raw_metrics]
+
+#     # Build comma-separated column list e.g. "revenue, net_profit, eps"
+#     columns_str = ", ".join(mapped_metrics)
+
+#     query = f"""
+#     SELECT {columns_str}
+#     FROM financials_yearly
+#     JOIN company_master USING(company_id)
+#     WHERE company_name = '{company}'
+#     AND fiscal_year = {year};
+#     """
+
+#     return query
+
+
+# # --------------------------------
+# # Comparison
+# # --------------------------------
+
+# def comparison_query(entities):
+
+#     companies = entities.get("COMPANY", [])
+#     metric = entities.get("METRIC", [None])[0]
+#     year = entities.get("YEAR", [None])[0]
+
+#     metric = map_metric(metric)
+
+#     company_list = ",".join([f"'{c}'" for c in companies])
+
+#     query = f"""
+#     SELECT company_name, {metric}
+#     FROM financials_yearly
+#     JOIN company_master USING(company_id)
+#     WHERE company_name IN ({company_list})
+#     AND fiscal_year = {year};
+#     """
+
+#     return query
+
+
+# # --------------------------------
+# # Trend Analysis
+# # --------------------------------
+
+# def trend_analysis_query(entities):
+
+#     company = entities.get("COMPANY", [None])[0]
+#     metric = entities.get("METRIC", [None])[0]
+
+#     metric = map_metric(metric)
+
+#     query = f"""
+#     SELECT fiscal_year, {metric}
+#     FROM financials_yearly
+#     JOIN company_master USING(company_id)
+#     WHERE company_name = '{company}'
+#     ORDER BY fiscal_year;
+#     """
+
+#     return query
+
+
+# # --------------------------------
+# # Performance Analysis
+# # --------------------------------
+
+# def performance_query(entities):
+
+#     company = entities.get("COMPANY", [None])[0]
+#     year = entities.get("YEAR", [None])[0]
+
+#     query = f"""
+#     SELECT revenue, net_profit, eps
+#     FROM financials_yearly
+#     JOIN company_master USING(company_id)
+#     WHERE company_name = '{company}'
+#     AND fiscal_year = {year};
+#     """
+
+#     return query
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 from .metric_mapper import map_metric
 
 def build_query(intent, entities):
@@ -25,32 +347,25 @@ def build_query(intent, entities):
 # Metric Lookup
 # --------------------------------
 
-# def metric_lookup_query(entities):
-
-#     company = entities.get("COMPANY", [None])[0]
-#     metric = entities.get("METRIC", [None])[0]
-#     year = entities.get("YEAR", [None])[0]
-
-#     query = f"""
-#     SELECT {metric}
-#     FROM financials_yearly
-#     JOIN company_master USING(company_id)
-#     WHERE company_name = '{company}'
-#     AND fiscal_year = {year};
-#     """
-
-#     return query
-
 def metric_lookup_query(entities):
 
     company = entities.get("COMPANY", [None])[0]
-    metric = entities.get("METRIC", [None])[0]
     year = entities.get("YEAR", [None])[0]
 
-    metric = map_metric(metric)
+    raw_metrics = entities.get("METRIC", [])
+
+    if not raw_metrics:
+        raise ValueError("No metric found in question")
+
+    mapped_metrics = [map_metric(m) for m in raw_metrics if m is not None]
+
+    if not mapped_metrics:
+        raise ValueError("No valid metric found after mapping")
+
+    columns_str = ", ".join(mapped_metrics)
 
     query = f"""
-    SELECT {metric}
+    SELECT {columns_str}
     FROM financials_yearly
     JOIN company_master USING(company_id)
     WHERE company_name = '{company}'
@@ -64,31 +379,18 @@ def metric_lookup_query(entities):
 # Comparison
 # --------------------------------
 
-# def comparison_query(entities):
-
-#     companies = entities.get("COMPANY", [])
-#     metric = entities.get("METRIC", [None])[0]
-#     year = entities.get("YEAR", [None])[0]
-
-#     company_list = ",".join([f"'{c}'" for c in companies])
-
-#     query = f"""
-#     SELECT company_name, {metric}
-#     FROM financials_yearly
-#     JOIN company_master USING(company_id)
-#     WHERE company_name IN ({company_list})
-#     AND fiscal_year = {year};
-#     """
-
-#     return query
-
 def comparison_query(entities):
 
     companies = entities.get("COMPANY", [])
-    metric = entities.get("METRIC", [None])[0]
     year = entities.get("YEAR", [None])[0]
 
-    metric = map_metric(metric)
+    raw_metrics = entities.get("METRIC", [])
+
+    # If no metric extracted, fall back to revenue
+    if not raw_metrics or raw_metrics[0] is None:
+        metric = "revenue"
+    else:
+        metric = map_metric(raw_metrics[0])
 
     company_list = ",".join([f"'{c}'" for c in companies])
 
@@ -107,27 +409,16 @@ def comparison_query(entities):
 # Trend Analysis
 # --------------------------------
 
-# def trend_analysis_query(entities):
-
-#     company = entities.get("COMPANY", [None])[0]
-#     metric = entities.get("METRIC", [None])[0]
-
-#     query = f"""
-#     SELECT fiscal_year, {metric}
-#     FROM financials_yearly
-#     JOIN company_master USING(company_id)
-#     WHERE company_name = '{company}'
-#     ORDER BY fiscal_year;
-#     """
-
-#     return query
-
 def trend_analysis_query(entities):
 
     company = entities.get("COMPANY", [None])[0]
-    metric = entities.get("METRIC", [None])[0]
 
-    metric = map_metric(metric)
+    raw_metrics = entities.get("METRIC", [])
+
+    if not raw_metrics or raw_metrics[0] is None:
+        raise ValueError("No metric found in question")
+
+    metric = map_metric(raw_metrics[0])
 
     query = f"""
     SELECT fiscal_year, {metric}
@@ -138,6 +429,7 @@ def trend_analysis_query(entities):
     """
 
     return query
+
 
 # --------------------------------
 # Performance Analysis

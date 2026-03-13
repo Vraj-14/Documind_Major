@@ -74,3 +74,32 @@ Thumbs.db
 .pytest_cache/
 .coverage
 htmlcov/
+
+
+
+# Node dependencies
+node_modules/
+
+
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+
+# Build folders (if created later)
+dist/
+build/
+
+# Editor settings
+.vscode/
+.idea/
+
+# Cache
+.cache/

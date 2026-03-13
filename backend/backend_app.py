@@ -3,10 +3,22 @@ from pydantic import BaseModel
 
 from backend.intent_router import process_question
 
+from fastapi.middleware.cors import CORSMiddleware
+
+
+
 app = FastAPI(
     title="Documind Financial Assistant",
     description="AI powered financial question answering system",
     version="1.0"
+)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 
@@ -46,3 +58,7 @@ def ask_question(request: QuestionRequest):
         "data": result["data"],
         "answer": result["answer"]
     }
+
+
+
+

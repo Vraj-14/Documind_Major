@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+
+    <!-- viewport meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Documind</title>
+
+<!-- favicon
+<link rel="icon" href="E:\8th Sem\MAJOR\Documind\frontend\favicon-32x32.png"> -->
+
+
+<link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Documind</h1>
+<p class="tagline">FINANCE INSIGHTS, POWERED BY AI</p>
+
+</header>
+
+
+<div class="container">
+
+<aside class="sidebar">
+
+<h3>Previous Questions</h3>
+<ul id="history"></ul>
+
+</aside>
+
+
+<main>
+
+<section class="companies">
+
+<h3>Quick Company Insights</h3>
+
+<div class="company-grid">
+
+<button class="company-card">HDFC Bank Limited</button>
+<button class="company-card">ICICI Bank Limited</button>
+<button class="company-card">Infosys Limited</button>
+<button class="company-card">Reliance Industries Limited</button>
+<button class="company-card">Tata Consultancy Services Limited</button>
+
+</div>
+
+</section>
+
+
+<section class="question-box">
+
+<input
+type="text"
+id="questionInput"
+placeholder="Ask financial question..."
+>
+
+<!-- <button id="sendBtn">⬆</button> -->
+ <button id="sendBtn">
+    <img src="icons/up-arrow.png" alt="Send">
+</button>
+
+</section>
+
+
+<section class="answer">
+
+<h3>AI Answer</h3>
+
+<div id="answerWindow"></div>
+
+</section>
+
+
+<section class="entities">
+
+<div class="entity">
+<h4>Company</h4>
+<p id="company"></p>
+</div>
+
+<div class="entity">
+<h4>Metric</h4>
+<p id="metric"></p>
+</div>
+
+<div class="entity">
+<h4>Year</h4>
+<p id="year"></p>
+</div>
+
+</section>
+
+</main>
+
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

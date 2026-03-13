@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Documind</title>
 
-<!-- Favicon -->
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="icons/analysis.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -24,7 +27,6 @@
             <span class="word" id="word0">Ask.</span>
             <span class="word" id="word1">Analyse.</span>
             <span class="word" id="word2">Unlock Insights.</span>
-            <!-- <span class="word" id="word3">Insights.</span> -->
         </div>
     </div>
 </header>
@@ -39,7 +41,6 @@
         <ul id="history"></ul>
     </aside>
 
-    <!-- Tab to reopen sidebar when collapsed -->
     <button class="sidebar-open-tab" id="sidebarOpenTab" title="Show sidebar">&#8250;</button>
 
     <main>
@@ -69,6 +70,25 @@
         <section class="answer">
             <h3>Response</h3>
             <div id="answerWindow"></div>
+        </section>
+
+        <!-- Chart section: bar (left) + pie (right) -->
+        <section class="chart-section" id="chartSection" style="display:none;">
+            <h3>Chart</h3>
+            <div class="chart-row">
+                <div class="chart-panel chart-panel--bar">
+                    <span class="chart-panel-label">Bar Chart</span>
+                    <div class="chart-wrapper">
+                        <canvas id="barChart"></canvas>
+                    </div>
+                </div>
+                <div class="chart-panel chart-panel--pie">
+                    <span class="chart-panel-label">Pie Chart</span>
+                    <div class="chart-wrapper">
+                        <canvas id="pieChart"></canvas>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="entities">
@@ -122,9 +142,9 @@
     runAnimation();
 
     /* ── SIDEBAR TOGGLE ── */
-    const sidebar       = document.getElementById('sidebar');
-    const toggleBtn     = document.getElementById('sidebarToggle');
-    const openTab       = document.getElementById('sidebarOpenTab');
+    const sidebar   = document.getElementById('sidebar');
+    const toggleBtn = document.getElementById('sidebarToggle');
+    const openTab   = document.getElementById('sidebarOpenTab');
 
     toggleBtn.addEventListener('click', () => {
         sidebar.classList.add('collapsed');

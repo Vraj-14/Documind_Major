@@ -17,6 +17,24 @@ function displayAnswer(result) {
     document.getElementById("year").innerText =
         (result.entities.YEAR || []).join(", ");
 
+
+    // ── Intent debug panel ───────────────────────────────────
+    const predicted  = result.predicted_intent || result.intent;
+    const final      = result.final_intent     || result.intent;
+    const confidence = result.confidence !== null ? result.confidence : "—";
+    const overridden = result.override_fired;
+
+    document.getElementById("predictedIntent").innerText = predicted;
+    document.getElementById("finalIntent").innerText     = final;
+    document.getElementById("confidenceScore").innerText = confidence !== "—"
+    ? `${confidence}%`
+    : "—";
+
+    // Highlight the final intent card if it was overridden
+    const finalCard = document.getElementById("finalIntentCard");
+    finalCard.style.borderColor = overridden ? "#E05A2B" : "var(--border)";
+
+
     // ── Charts ───────────────────────────────────────────────
     renderCharts(result);
 }

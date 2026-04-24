@@ -61,6 +61,7 @@
 
 
 import torch
+import torch.nn.functional as F
 import joblib
 from transformers import DistilBertTokenizerFast, DistilBertForSequenceClassification
 
@@ -99,11 +100,21 @@ def predict_intent(text):
 
     logits = outputs.logits
 
-    pred_id = torch.argmax(logits, dim=1).item()
+    # OLD: just argmax, no probability
+    # pred_id = torch.argmax(logits, dim=1).item()
+    # label = encoder.inverse_transform([pred_id])[0]
+    # return label
+
+    # NEW: softmax → confidence score
+    probs = F.softmax(logits, dim=1)
+
+    pred_id = torch.argmax(probs, dim=1).item()
+
+    confidence = float(probs[0][pred_id])
 
     label = encoder.inverse_transform([pred_id])[0]
 
-    return label
+    return label, confidence
 
 
 # ------------------------------------------------
@@ -114,6 +125,7 @@ if __name__ == "__main__":
 
     q = "What is the revenue of HDFC Bank Limited in 2024?"
 
-    intent = predict_intent(q)
+    intent, confidence = predict_intent(q)
 
     print("Predicted intent:", intent)
+    print(f"Confidence: {confidence:.1%}")

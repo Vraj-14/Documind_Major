@@ -30,3 +30,18 @@ Steps :
 1) MAJOR\Documind>                 uvicorn backend.backend_app:app --reload
 2) MAJOR\Documind\frontend>        python -m http.server 5500 
 3) visit :                         http://localhost:5500
+
+
+
+
+
+
+
+PS E:\8th Sem\MAJOR\Documind> (Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned) ; (& "e:\8th Sem\MAJOR\Documind\.venv\Scripts\Activate.ps1")
+(.venv) PS E:\8th Sem\MAJOR\Documind> 
+
+
+* Questions : 
+
+1) give performance analysis of HDFC Bank Limited in 2023 based on share price
+2) what is / compare revenue of HDFC Bank Limited and ICICI Bank Limited in 2024 

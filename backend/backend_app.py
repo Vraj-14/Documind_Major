@@ -45,20 +45,21 @@ def home():
 
 @app.post("/ask")
 def ask_question(request: QuestionRequest):
-
     question = request.question
-
-    result = process_question(question)
+    result   = process_question(question)
 
     return {
-        "question": question,
-        "intent": result["intent"],
-        "entities": result["entities"],
-        "sql_query": result["query"],
-        "data": result["data"],
-        "answer": result["answer"]
+        "question":         question,
+        "intent":           result["intent"],
+        "entities":         result["entities"],
+        "sql_query":        result["query"],
+        "data":             result["data"],
+        "answer":           result["answer"],
+        # NEW — intent debug fields
+        "predicted_intent": result.get("predicted_intent", result["intent"]),
+        "final_intent":     result.get("final_intent",     result["intent"]),
+        "confidence":       result.get("confidence",       None),
+        "override_fired":   result.get("override_fired",   False),
     }
-
-
 
 

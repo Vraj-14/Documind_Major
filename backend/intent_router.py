@@ -517,8 +517,6 @@ from .yfinance_fallback import fetch_from_yfinance
 
 # ─────────────────────────────────────────────────────────────
 # STEP 1 — YEAR REPAIR
-# Regex replaces the NER model's broken year tokens entirely.
-# e.g.  YEAR:['202']  TIMERANGE:['4 and 2025']  →  YEAR:['2024','2025']
 # ─────────────────────────────────────────────────────────────
 
 def _repair_years(entities, question):
@@ -535,45 +533,84 @@ def _repair_years(entities, question):
 
 
 # ─────────────────────────────────────────────────────────────
-# STEP 2 — INTENT OVERRIDE
-# Corrects the trained model's known mis-classifications using
-# lightweight keyword + entity signal rules.
+# STEP 2 — INTENT OVERRIDE  (expanded keyword + entity rules)
+#
+# OLD: ~6 keyword phrases, no entity-only signal, returns str
+# NEW: 20+ phrases, entity-signal rule, returns (intent, reason, confidence)
 # ─────────────────────────────────────────────────────────────
 
 TREND_KEYWORDS = re.compile(
     r'\b(trend|over the years|over years|historical|history|'
     r'year.on.year|yoy|across years|past years|growth over|'
-    r'how has .+ changed|how did .+ change|progression)\b',
+    r'how has|how did .+ change|progression|trajectory|'
+    r'year by year|over time|since \d{4}|from \d{4})\b',
     re.IGNORECASE
 )
 
 COMPARE_KEYWORDS = re.compile(
-    r'\b(compare|comparison|vs\.?|versus|between|which is (higher|better|more|greater)|'
-    r'who has (more|higher|better)|difference between)\b',
+    r'\b(compare|comparison|vs\.?|versus|between|'
+    r'which is (higher|better|more|greater|lower)|'
+    r'who has (more|higher|better)|difference between|'
+    r'rank|ranking|better than|higher than|lower than|'
+    r'which company|who performed)\b',
+    re.IGNORECASE
+)
+
+PERF_KEYWORDS = re.compile(
+    r'\b(perform|performance|overall|how did|how is|'
+    r'financial health|results)\b',
     re.IGNORECASE
 )
 
 
-def _override_intent(predicted_intent, entities, question):
+def _override_intent(predicted_intent, model_confidence, entities, question):
+    """
+    Returns: (final_intent, override_reason, display_confidence)
+
+    override_reason values (internal — not sent to UI):
+        'model'                  — no rule fired, model output accepted
+        'rule_trend'             — trend keyword detected, no year
+        'rule_compare_keyword'   — compare keyword + 2+ companies
+        'rule_entity_signal'     — 2 companies + year, no keyword needed
+        'rule_guard_trend'       — trend + specific year → metric_lookup
+        'rule_guard_comparison'  — comparison with only 1 company
+        'rule_performance'       — performance keyword detected
+    """
     years     = entities.get('YEAR', [])
     companies = entities.get('COMPANY', [])
 
-    # Rule 1: trend keyword + no year → force trend_analysis
+    # Rule 1: trend keyword + no year in question
     if not years and TREND_KEYWORDS.search(question):
-        print(f"INTENT OVERRIDE: {predicted_intent} → trend_analysis")
-        return 'trend_analysis'
+        print(f"INTENT OVERRIDE: {predicted_intent} → trend_analysis (rule_trend)")
+        return 'trend_analysis', 'rule_trend', 0.90
 
-    # Rule 2: compare keyword + 2+ companies → force comparison
+    # Rule 2a: compare keyword + 2+ companies
     if len(companies) >= 2 and COMPARE_KEYWORDS.search(question):
-        print(f"INTENT OVERRIDE: {predicted_intent} → comparison")
-        return 'comparison'
+        print(f"INTENT OVERRIDE: {predicted_intent} → comparison (rule_compare_keyword)")
+        return 'comparison', 'rule_compare_keyword', 0.92
 
-    # Rule 3: can't be comparison with only 1 company
+    # Rule 2b: 2 companies + year present — entity signal alone is enough
+    if len(companies) >= 2 and years:
+        print(f"INTENT OVERRIDE: {predicted_intent} → comparison (rule_entity_signal)")
+        return 'comparison', 'rule_entity_signal', 0.80
+
+    # Rule 3: trend predicted but a specific year was given → metric_lookup
+    if predicted_intent == 'trend_analysis' and len(years) == 1:
+        print(f"INTENT OVERRIDE: trend_analysis → metric_lookup (rule_guard_trend)")
+        return 'metric_lookup', 'rule_guard_trend', 0.85
+
+    # Rule 4: comparison predicted but only 1 company found
     if predicted_intent == 'comparison' and len(companies) < 2:
-        print(f"INTENT OVERRIDE: comparison → metric_lookup (only {len(companies)} company)")
-        return 'metric_lookup'
+        print(f"INTENT OVERRIDE: comparison → metric_lookup (rule_guard_comparison)")
+        return 'metric_lookup', 'rule_guard_comparison', 0.85
 
-    return predicted_intent
+    # Rule 5: performance keywords + single company + year
+    if PERF_KEYWORDS.search(question) and len(companies) == 1 and years:
+        print(f"INTENT OVERRIDE: {predicted_intent} → performance_analysis (rule_performance)")
+        return 'performance_analysis', 'rule_performance', 0.78
+
+    # No rule fired — trust the model
+    return predicted_intent, 'model', model_confidence
 
 
 # ─────────────────────────────────────────────────────────────
@@ -603,22 +640,9 @@ def _validate_entities(entities, intent):
 
 # ─────────────────────────────────────────────────────────────
 # STEP 4 — FALLBACK RUNNER
-#
-# OLD: when DB returned empty rows or raised an exception, the
-#      pipeline either hallucinated (sent empty data to LLM) or
-#      returned a blunt "No data found" message with no further attempt.
-#
-# NEW: before giving up, the fallback calls yfinance to fetch the
-#      same data from Yahoo Finance. If yfinance succeeds, the answer
-#      is generated from live data with a source note. Only if yfinance
-#      also fails does the pipeline return the "No data found" message.
 # ─────────────────────────────────────────────────────────────
 
 def _run_fallback(question, intent, entities):
-    """
-    Attempts to answer the question via yfinance.
-    Returns a full result dict on success, or None on failure.
-    """
     try:
         print("FALLBACK: DB had no data — trying yfinance...")
         columns, rows, note = fetch_from_yfinance(entities, intent)
@@ -627,7 +651,6 @@ def _run_fallback(question, intent, entities):
             print("FALLBACK: yfinance also returned no data")
             return None
 
-        # Prepend the source note to the LLM prompt context
         answer = generate_answer(
             question + f"\n\n[{note}]",
             columns,
@@ -635,11 +658,16 @@ def _run_fallback(question, intent, entities):
         )
 
         return {
-            "intent":   intent,
-            "entities": entities,
-            "query":    "yfinance_fallback",   # signals to frontend that fallback was used
-            "data":     rows,
-            "answer":   f"{answer}\n\n_{note}_"
+            "intent":      intent,
+            "entities":    entities,
+            "query":       "yfinance_fallback",
+            "data":        rows,
+            "answer":      f"{answer}\n\n_{note}_",
+            # confidence / intent debug fields preserved
+            "predicted_intent":   intent,
+            "final_intent":       intent,
+            "confidence":         None,
+            "override_fired":     False,
         }
 
     except Exception as fb_err:
@@ -653,80 +681,99 @@ def _run_fallback(question, intent, entities):
 
 def process_question(question):
 
-    # 1. NER + intent from models
-    intent   = predict_intent(question)
+    # 1. NER + intent (now returns label + confidence)
+    predicted_intent, model_confidence = predict_intent(question)
     entities = predict_entities(question)
 
     # 2. Repair broken year tokens from NER
     entities = _repair_years(entities, question)
 
-    # 3. Correct the intent model's known mis-classifications
-    intent = _override_intent(intent, entities, question)
+    # 3. Override layer — returns (final_intent, reason, confidence)
+    final_intent, override_reason, confidence = _override_intent(
+        predicted_intent, model_confidence, entities, question
+    )
 
-    print(f"INTENT: {intent}  |  ENTITIES: {entities}")
+    override_fired = (final_intent != predicted_intent)
+
+    print(f"PREDICTED: {predicted_intent} ({model_confidence:.0%})  "
+          f"FINAL: {final_intent} ({confidence:.0%})  "
+          f"REASON: {override_reason}")
 
     # 4. Validate before touching the DB
-    error = _validate_entities(entities, intent)
+    error = _validate_entities(entities, final_intent)
     if error:
-        return {"intent": intent, "entities": entities,
-                "query": None, "data": [], "answer": error}
+        return {
+            "intent":           final_intent,
+            "entities":         entities,
+            "query":            None,
+            "data":             [],
+            "answer":           error,
+            "predicted_intent": predicted_intent,
+            "final_intent":     final_intent,
+            "confidence":       round(confidence * 100, 1),
+            "override_fired":   override_fired,
+        }
 
     # 5. Build SQL and execute
-    # ── DB pipeline ──────────────────────────────────────────
     db_ok   = False
     columns = []
     rows    = []
     query   = None
 
     try:
-        query = build_query(intent, entities)
+        query = build_query(final_intent, entities)
         columns, rows = execute_query(query)
         db_ok = True
     except ValueError as ve:
-        # Metric mapping failure or unsupported intent
         print(f"DB ValueError: {ve} — trying fallback")
     except Exception as db_err:
-        # SQL error, connection failure, undefined column, etc.
         print(f"DB ERROR: {db_err} — trying fallback")
         query = str(db_err)
 
-    # 6. Empty rows after a successful query → also trigger fallback
-    #
-    # OLD: returned "No data found" immediately.
-    # NEW: tries yfinance first; only returns "No data found" if
-    #      yfinance also has nothing.
+    # 6. Empty rows → trigger fallback
     if db_ok and not rows:
         print("DB returned empty rows — trying fallback")
-        db_ok = False   # treat as failure to trigger fallback below
+        db_ok = False
 
-    # 7. If DB failed or was empty → try yfinance fallback
+    # 7. If DB failed → yfinance fallback
     if not db_ok:
-        fallback_result = _run_fallback(question, intent, entities)
+        fallback_result = _run_fallback(question, final_intent, entities)
         if fallback_result:
+            fallback_result["predicted_intent"] = predicted_intent
+            fallback_result["final_intent"]     = final_intent
+            fallback_result["confidence"]       = round(confidence * 100, 1)
+            fallback_result["override_fired"]   = override_fired
             return fallback_result
 
-        # Both DB and yfinance failed — return clean message
         companies = ", ".join(entities.get("COMPANY", []))
         years     = ", ".join(str(y) for y in entities.get("YEAR", []))
         return {
-            "intent":   intent,
-            "entities": entities,
-            "query":    query,
-            "data":     [],
-            "answer":   (
+            "intent":           final_intent,
+            "entities":         entities,
+            "query":            query,
+            "data":             [],
+            "answer":           (
                 f"No data found for {companies}"
                 f"{' in ' + years if years else ''}. "
                 "The data is not available in the local database or Yahoo Finance."
-            )
+            ),
+            "predicted_intent": predicted_intent,
+            "final_intent":     final_intent,
+            "confidence":       round(confidence * 100, 1),
+            "override_fired":   override_fired,
         }
 
-    # 8. DB succeeded with data — generate answer normally
+    # 8. DB succeeded — generate answer
     answer = generate_answer(question, columns, rows)
 
     return {
-        "intent":   intent,
-        "entities": entities,
-        "query":    query,
-        "data":     rows,
-        "answer":   answer
+        "intent":           final_intent,
+        "entities":         entities,
+        "query":            query,
+        "data":             rows,
+        "answer":           answer,
+        "predicted_intent": predicted_intent,
+        "final_intent":     final_intent,
+        "confidence":       round(confidence * 100, 1),
+        "override_fired":   override_fired,
     }

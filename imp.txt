@@ -45,3 +45,4 @@ PS E:\8th Sem\MAJOR\Documind> (Set-ExecutionPolicy -Scope Process -ExecutionPoli
 
 1) give performance analysis of HDFC Bank Limited in 2023 based on share price
 2) what is / compare revenue of HDFC Bank Limited and ICICI Bank Limited in 2024 
+3) What trend is observed in Adani Enterprises Limited total equity over the past 3 years?

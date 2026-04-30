@@ -540,7 +540,7 @@ def _repair_years(entities, question):
 # ─────────────────────────────────────────────────────────────
 
 TREND_KEYWORDS = re.compile(
-    r'\b(trend|over the years|over years|historical|history|'
+    r'\b(trend|trend analysis|over the years|over years|historical|history|'
     r'year.on.year|yoy|across years|past years|growth over|'
     r'how has|how did .+ change|progression|trajectory|'
     r'year by year|over time|since \d{4}|from \d{4})\b',
